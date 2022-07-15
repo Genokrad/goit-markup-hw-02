@@ -19,10 +19,18 @@ body {
   font-style: normal;
 }
 
-/* a {
-  text-decoration: none;
-  font-style: normal;
-} */
+.visually-hidden { 
+  position: absolute; 
+  width: 1px; 
+  height: 1px; 
+  margin: -1px; 
+  border: 0; 
+  padding: 0; 
+  white-space: nowrap; 
+  clip-path: inset(100%); 
+  clip: rect(0 0 0 0); 
+  overflow: hidden; 
+}
 
 .list  {
   list-style: none;
@@ -145,6 +153,11 @@ body {
   line-height: 1.71;
   text-decoration: none;
   font-style: normal;
+}
+
+.contact-list:hover,
+.contact-list:focus {
+  color: var(--accent-color);
 }
 
 .footer {
